@@ -23,6 +23,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* visually-hidden utility for accessible labels */
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -51,7 +66,7 @@
           <p class="title">Web developer</p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
+        <button class="info_more-btn" data-sidebar-btn aria-expanded="false">
           <span>Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
@@ -74,7 +89,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:mjana3321.com" class="contact-link">mjana3321@gmail.com</a>
+              <a href="mailto:mjana3321@gmail.com" class="contact-link">mjana3321@gmail.com</a>
             </div>
 
           </li>
@@ -128,19 +143,19 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.facebook.com/share/1CXtRVc87s/" class="social-link">
+            <a href="https://www.facebook.com/share/1CXtRVc87s/" class="social-link" target="_blank" rel="noopener noreferrer">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://x.com/milanjana143" class="social-link">
+            <a href="https://x.com/milanjana143" class="social-link" target="_blank" rel="noopener noreferrer">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.instagram.com/milanjana143?igsh=MTl6ZHhlY3hhNTQ5ZQ==" class="social-link">
+            <a href="https://www.instagram.com/milanjana143?igsh=MTl6ZHhlY3hhNTQ5ZQ==" class="social-link" target="_blank" rel="noopener noreferrer">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -150,7 +165,6 @@
       </div>
 
     </aside>
-
 
 
 
@@ -170,7 +184,7 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>Introduction</button>
+            <button class="navbar-link  active" data-nav-link aria-current="page">Introduction</button>
           </li>
 
           <li class="navbar-item">
@@ -184,9 +198,9 @@
 
 
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+          </li> -->
 
 
 
@@ -202,7 +216,6 @@
         </ul>
 
       </nav>
-
 
 
 
@@ -328,9 +341,6 @@
 
 
 
-
-        
-
         <!-- <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
@@ -431,8 +441,6 @@
 
 
 
-        
-
         <!--
           - testimonials modal
         -->
@@ -440,14 +448,13 @@
 
 
 
-
-        <div class="modal-container" data-modal-container>
+        <div class="modal-container" data-modal-container aria-hidden="true">
 
           <div class="overlay" data-overlay></div>
 
-          <section class="testimonials-modal">
+          <section class="testimonials-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-id">
 
-            <button class="modal-close-btn" data-modal-close-btn>
+            <button class="modal-close-btn" data-modal-close-btn aria-label="Close dialog">
               <ion-icon name="close-outline"></ion-icon>
             </button>
 
@@ -461,7 +468,7 @@
 
             <div class="modal-content">
 
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+              <h4 id="modal-title-id" class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
               <time datetime="2021-06-14">14 June, 2021</time>
 
@@ -484,11 +491,9 @@
 
 
 
-
         <!--
           - clients
         -->
-
 
 
         <!-- <section class="clients">
@@ -547,7 +552,6 @@
       <!--
         - #QUALIFICATION
       -->
-
 
 
 
@@ -725,7 +729,6 @@
 
 
 
-
           </ol>
 
         </section>
@@ -802,6 +805,7 @@
 
 
 
+
       
 
 
@@ -812,8 +816,7 @@
 
 
 
-
-      <article class="portfolio" data-page="portfolio">
+      <!-- <article class="portfolio" data-page="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -843,9 +846,9 @@
 
           <div class="filter-select-box">
 
-            <button class="filter-select" data-select>
+            <button class="filter-select" data-select aria-expanded="false">
 
-              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-value" data-select-value>Select category</div>
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
@@ -885,7 +888,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/project-1.jpg" alt="Finance project screenshot" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Finance</h3>
@@ -903,7 +906,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/project-2.png" alt="Orizon project screenshot" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Orizon</h3>
@@ -921,7 +924,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/project-3.jpg" alt="Fundo project screenshot" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Fundo</h3>
@@ -939,7 +942,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/project-4.png" alt="Brawlhalla app screenshot" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Brawlhalla</h3>
@@ -957,7 +960,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/project-5.png" alt="DSM project screenshot" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">DSM.</h3>
@@ -975,7 +978,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images/project-6.png" alt="MetaSpark project screenshot" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">MetaSpark</h3>
@@ -993,7 +996,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/project-7.png" alt="Summary project screenshot" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Summary</h3>
@@ -1011,7 +1014,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                  <img src="./assets/images/project-8.jpg" alt="Task Manager app screenshot" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Task Manager</h3>
@@ -1029,7 +1032,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                  <img src="./assets/images/project-9.png" alt="Arrival project screenshot" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Arrival</h3>
@@ -1043,7 +1046,15 @@
 
         </section>
 
-      </article>
+      </article> -->
+
+
+
+
+
+
+
+
 
 
 
@@ -1080,7 +1091,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
@@ -1108,7 +1119,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">Best fonts every designer</h3>
@@ -1136,7 +1147,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">Design digest #80</h3>
@@ -1164,7 +1175,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">UI interactions of the week</h3>
@@ -1192,7 +1203,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
@@ -1220,7 +1231,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">Design digest #79</h3>
@@ -1243,7 +1254,6 @@
 
 
 
-
       <!--
         - #CONTACT
       -->
@@ -1258,7 +1268,7 @@
           <figure>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
+              width="400" height="300" loading="lazy" title="Map showing Sacramento, CA"></iframe>
           </figure>
         </section>
 
@@ -1269,12 +1279,15 @@
           <form action="#" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <label class="sr-only" for="fullname">Full name</label>
+              <input id="fullname" type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <label class="sr-only" for="email">Email address</label>
+              <input id="email" type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <label class="sr-only" for="message">Your message</label>
+            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
@@ -1290,8 +1303,6 @@
     </div>
 
   </main>
-
-
 
 
 

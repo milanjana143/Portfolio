@@ -11,6 +11,7 @@
 
 
 
+
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -449,7 +450,6 @@ main {
 
 
 
-
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
@@ -486,7 +486,6 @@ main {
 .navbar-link:focus { color: var(--light-gray-70); }
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
-
 
 
 
@@ -556,7 +555,7 @@ main {
 }
 
 
-/**
+ /**
  * #testimonials 
  */
 
@@ -608,7 +607,7 @@ main {
 }
 
 
-/**
+ /**
  * #testimonials-modal
  */
 
@@ -722,7 +721,7 @@ main {
 }
 
 
-/**
+ /**
  * #clients 
  */
 
@@ -830,7 +829,7 @@ main {
 }
 
 
-/**
+ /**
  * skills 
  */
 
@@ -1543,9 +1542,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-
-
-/**
+ /**
  * responsive larger than 768px screen
  */
 
