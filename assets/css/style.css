@@ -1695,7 +1695,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * NAVBAR
    */
 
-  .navbar {
+  /* .navbar {
     position: absolute;
     bottom: auto;
     top: 0;
@@ -1705,7 +1705,26 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 0 20px;
     padding: 0 20px;
     box-shadow: none;
+  } */
+
+
+
+
+  .navbar {
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    right: 0;
+    left: unset;       
+    width: max-content;
+    border-radius: 0 20px;
+    padding: 0 5px 0 0; 
+    box-shadow: none;
   }
+
+
+
+  
 
   .navbar-list {
     gap: 30px;
