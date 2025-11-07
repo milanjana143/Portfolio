@@ -1718,7 +1718,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     left: unset;       
     width: max-content;
     border-radius: 0 20px;
-    padding: 0 5px 0 0; 
+    padding: 0 30px 0 0; 
     box-shadow: none;
   }
 
