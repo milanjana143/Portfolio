@@ -242,7 +242,8 @@ article.active {
 
 .article-title {
   position: relative;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
+  display: inline-block;
 }
 
 .article-title::after {
@@ -250,8 +251,8 @@ article.active {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30px;
-  height: 3px;
+  width: 100%;
+  height: 2.4px;
   background: var(--text-gradient-yellow);
   border-radius: 3px;
 }
@@ -1296,11 +1297,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   .article-title {
     font-weight: var(--fw-600);
     padding-bottom: 15px;
+    display: inline-block;
   }
 
   .article-title::after {
-    width: 40px;
-    height: 5px;
+    height: 3px;
   }
 
   .icon-box {
