@@ -1,2 +1,2 @@
-# Portfolio
-Milan Jana Portfolio.....
+# Personal Portfolio
+Developed by Milan Jana
