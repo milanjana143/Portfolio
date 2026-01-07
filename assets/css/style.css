@@ -1206,7 +1206,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   transition: var(--transition-1);
 }
 
-.form-btn ion-icon { font-size: 16px; }
+/* .form-btn ion-icon { font-size: 18px; } */
 
 .form-btn:hover { background: var(--bg-gradient-yellow-1); }
 
@@ -1537,7 +1537,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 16px 20px;
   }
 
-  .form-btn ion-icon { font-size: 18px; }
+  .form-btn ion-icon { font-size: 22px; }
 
 }
 
