@@ -1,4 +1,3 @@
-## 🚀 Project Preview
-HTML Tags Showcase – A beginner friendly project demonstrating different HTML tags with their raw output. It focuses on core HTML structure with minimal CSS usage, including inline, internal, and external styles. To see the full output, click on the provided link in the about section. <br><br>
-<!-- ![Project Demo](Portfolio/assets/images/preview.gif) -->
+## 🚀 Portfolio Preview
+This is my personal portfolio web site showcasing my personal growth and skills through real-world web projects. It highlights my learning journey in programming languages, and modern web tools with a clean and simple design approach. To explore my portfolio, visit the link in the About section. <br><br>
 ![Project Demo](assets/images/preview.gif)
