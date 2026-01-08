@@ -828,6 +828,9 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+  /* word-spacing: 0.9px; */
 }
 
 
