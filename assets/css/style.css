@@ -1645,6 +1645,55 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+.cert-meta{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* date text */
+.cert-date{
+  font-size: var(--fs-6);
+  color: var(--orange-yellow-crayola);
+  line-height: 1.2;
+}
+
+/* mini CV button */
+.cv-mini-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  font-size: var(--fs-6);
+  line-height: 1;                /* keeps height tight */
+  padding: 0.5px 8px;             /* reduced height */
+
+  border-radius: 6px;
+
+  background: var(--bg-gradient-jet);
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);   /* thinner shadow */
+  transition: var(--transition-1);
+}
+
+/* icon size */
+.cv-mini-btn ion-icon{
+  font-size: 0.95em;
+}
+
+/* hover */
+.cv-mini-btn:hover{
+  background: var(--bg-gradient-yellow-2);
+}
+
+
+
+
+
+
+
 
 
 /**
