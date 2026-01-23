@@ -523,6 +523,36 @@ main {
   gap: 20px;
 }
 
+
+/* card layout */
+.service-item.two-skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-box.left {
+  align-items: flex-start;
+}
+
+.skill-box.right {
+  align-items: flex-end;
+}
+
+.skill-box.left,
+.skill-box.right {
+  align-items: center;
+}
+
+
+
+
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
