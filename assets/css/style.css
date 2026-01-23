@@ -585,6 +585,16 @@ main {
 
 .service-item-title { margin-bottom: 7px; }
 
+
+.service-item {
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: scale(1.02);
+}
+
+
 .service-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
