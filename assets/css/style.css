@@ -229,6 +229,12 @@ article.active {
   text-transform: capitalize;
 }
 
+.title{
+  font-size: var(--fs-4);
+  color: var(--white-2);
+  font-weight: var(--fw-500);
+}
+
 .h2 { font-size: var(--fs-1); }
 
 .h3 { font-size: var(--fs-2); }
@@ -236,8 +242,8 @@ article.active {
 .h4 { font-size: var(--fs-4); }
 
 .h5 {
-  font-size: var(--fs-7);
-  font-weight: var(--fw-500);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
 }
 
 .article-title {
@@ -1671,6 +1677,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-left: auto;
   }
   
+}
+
+@media (max-width: 600px) {
+  .cv-btn ion-icon {
+    font-size: 17px;   /* change this value as you like */
+  }
 }
 
 
