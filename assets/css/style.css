@@ -895,6 +895,11 @@ main {
   font-weight: var(--fw-300);
 }
 
+.skill .title-wrapper dataa {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+}
+
 .skill-progress-bg {
   background: var(--jet);
   width: 100%;
