@@ -3,6 +3,6 @@
 .
 .
 </form>
-Replace your form URL from Formspree inside action attribute to get you form submission in your gmail
 
+Replace your form URL from Formspree inside action attribute to get you form submission in your gmail.
 Sign up Formspree- https://formspree.io/
