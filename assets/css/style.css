@@ -415,6 +415,11 @@ main {
   border-radius: 20px;
 }
 
+.info-content {
+  max-width: 150px;  /* control max size */
+  width: 100%;
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -1468,6 +1473,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box img { width: 120px; }
 
+  .info-content {
+  max-width: 100px;  /* control max size */
+  width: 100%;
+  }
   .info-content .name { margin-bottom: 15px; }
 
   .info-content .title { padding: 5px 18px; }
