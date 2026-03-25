@@ -113,8 +113,25 @@
 }
 
 
+.service-item-title {
+  position: relative;
+  display: inline-block;
+}
 
-
+.yt-mini-logo {
+  position: absolute;
+  top: 0px;     /* adjust this */
+  right: -26px; /* spacing from text */
+  height: 20px;
+  width: 19px;
+}
+.yt-mini-logo2 {
+  position: absolute;
+  top: 0px;     /* adjust this */
+  right: -26px; /* spacing from text */
+  height: 18px;
+  width: auto;
+}
 
 /*-----------------------------------*\
   #RESET
