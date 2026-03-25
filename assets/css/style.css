@@ -133,6 +133,68 @@
   width: auto;
 }
 
+/* Wrapper */
+.title-wrapper {
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+/* Common style */
+.title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+
+  font-size: var(--fs-4);
+  color: var(--white-2);
+  font-weight: var(--fw-500);
+
+  animation: flipCycle 6s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  transform-origin: center;
+  backface-visibility: hidden;   /* 🔥 FIX: removes flicker */
+}
+
+/* Timing (must match duration) */
+.title:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.title:nth-child(2) {
+  animation-delay: 3s;   /* 🔥 6s / 2 = 3s */
+}
+
+/* Improved animation */
+@keyframes flipCycle {
+
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+
+  10% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  45% {   /* 🔥 HOLD LONGER */
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  55% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+}
+
+
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
